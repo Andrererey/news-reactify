@@ -13,7 +13,6 @@ export const useFetch = (fetchFunction, params) => {
       try {
         setIsLoading(true)
         const result = await fetchFunction(params)
-
         setData(result)
       } catch (error) {
         setError(error)
