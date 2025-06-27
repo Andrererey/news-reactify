@@ -1,5 +1,4 @@
 import styles from "./styles.module.css"
-import Pagination from "../Pagination/Pagination.jsx";
 import {PAGE_SIZE, TOTAL_PAGES} from "../../constants/constants.js";
 import NewsList from "../NewsList/NewsList.jsx";
 import NewsFilters from "../NewsFilters/NewsFilters.jsx";
