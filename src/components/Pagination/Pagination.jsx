@@ -1,6 +1,12 @@
 import styles from "./styles.module.css"
 
-const Pagination = ({totalPages, handleNextPage, handlePreviousPage, handlePageClick, currentPage}) => {
+const Pagination = ({
+                      totalPages,
+                      handleNextPage,
+                      handlePreviousPage,
+                      handlePageClick,
+                      currentPage
+                    }) => {
   return (<div className={styles.pagination}>
     <button
       onClick={() => handlePreviousPage(currentPage)}
