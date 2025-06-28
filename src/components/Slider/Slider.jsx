@@ -7,7 +7,7 @@ const Slider = ({children, step = 150}) => {
   const scrollLeft = () => {
     if (sliderRef.current) {
       sliderRef.current.scrollTo({
-        left: sliderRef.current.scrollLeft - 150, behavior: 'smooth' // Плавная прокрутка
+        left: sliderRef.current.scrollLeft - step, behavior: 'smooth' // Плавная прокрутка
       });
     }
   };
@@ -15,7 +15,7 @@ const Slider = ({children, step = 150}) => {
   const scrollRight = () => {
     if (sliderRef.current) {
       sliderRef.current.scrollTo({
-        left: sliderRef.current.scrollLeft + 150, behavior: 'smooth' // Плавная прокрутка
+        left: sliderRef.current.scrollLeft + step, behavior: 'smooth' // Плавная прокрутка
       });
     }
   };
